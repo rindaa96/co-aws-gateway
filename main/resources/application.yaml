@@ -1,0 +1,43 @@
+outbound:
+  baseUrl: ${baseUrl}
+  baseUrlCo: ${baseUrlCo}
+  idp:
+    httpClient:
+      baseUrl: ${idp.httpClient.baseUrl}
+      connectTimeoutInMilliseconds: ${idp.httpClient.connectTimeoutInMilliseconds}
+      readTimeoutInMilliseconds: ${idp.httpClient.readTimeoutInMilliseconds}
+      logLevel: ${idp.httpClient.logLevel}
+  cardlessWithdrawal:
+    httpClient:
+      baseUrl: ${cardlessWithdrawal.httpClient.baseUrl}
+      connectTimeoutInMilliseconds: ${cardlessWithdrawal.httpClient.connectTimeoutInMilliseconds}
+      readTimeoutInMilliseconds: ${cardlessWithdrawal.httpClient.readTimeoutInMilliseconds}
+      logLevel: ${cardlessWithdrawal.httpClient.logLevel}
+  qris:
+    httpClient:
+      baseUrl: ${qris.httpClient.baseUrl}
+      connectTimeoutInMilliseconds: ${qris.httpClient.connectTimeoutInMilliseconds}
+      readTimeoutInMilliseconds: ${qris.httpClient.readTimeoutInMilliseconds}
+      logLevel: ${qris.httpClient.logLevel}
+  biSnap:
+    httpClient:
+      baseUrl: ${biSnap.httpClient.baseUrl}
+      connectTimeoutInMilliseconds: ${biSnap.httpClient.connectTimeoutInMilliseconds}
+      readTimeoutInMilliseconds: ${biSnap.httpClient.readTimeoutInMilliseconds}
+      logLevel: ${biSnap.httpClient.logLevel}
+bpi:
+  issuer:
+    number: ${bpi.issuer.number}
+spring:
+  application:
+    name: AWS_GATEWAY
+  zipkin:
+    base-url: ${zipkin.base-url}
+  sleuth:
+    enabled: true
+    sampler:
+      probability: 1.0
+  profiles:
+    active: dev
+co:
+  code: ${CO_APP_CODE:co}

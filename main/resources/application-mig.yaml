@@ -1,0 +1,39 @@
+baseUrl: http://woi-co-mobile-api-mig.devops.indivaragroup.com
+baseUrlCo: http://woi-co-api-mig.devops.indivaragroup.com
+idp:
+  httpClient:
+    baseUrl: http://woi-co-mobile-api-mig.devops.indivaragroup.com/${co.code}/idp/api/
+    connectTimeoutInMilliseconds: 15000
+    readTimeoutInMilliseconds: 15000
+    logLevel: BODY
+cardlessWithdrawal:
+  httpClient:
+    baseUrl: http://woi-co-mobile-api-mig.devops.indivaragroup.com/${co.code}/transaction-cardless-withdrawal/api/
+    connectTimeoutInMilliseconds: 15000
+    readTimeoutInMilliseconds: 15000
+    logLevel: BODY
+qris:
+  httpClient:
+    baseUrl: http://woi-co-mobile-api-mig.devops.indivaragroup.com/${co.code}/transaction-qris/api/
+    connectTimeoutInMilliseconds: 15000
+    readTimeoutInMilliseconds: 15000
+    logLevel: BODY
+biSnap:
+  httpClient:
+    baseUrl: http://woi-co-mobile-api-mig.devops.indivaragroup.com/${co.code}/merchant/api/
+    connectTimeoutInMilliseconds: 15000
+    readTimeoutInMilliseconds: 15000
+    logLevel: BODY
+bayarGw:
+  merchantId: WOI2S
+  transactionKey: woi2##woi2
+algoCardlessWithdrawal:
+  clientId: 067b5c25-3d8e-49a7-84fc-13faae01f302
+  partnerId: 067b5c25-3d8e-49a7-84fc-13faae01f302
+  secretId: ZQHA35Gv0rY1u6gdKefIX7z8DL9k2o4b
+  channelId: 75421
+  encodedPublicKey : LS0tLS1CRUdJTiBQVUJMSUMgS0VZLS0tLS0KTUlJQklqQU5CZ2txaGtpRzl3MEJBUUVGQUFPQ0FROEFNSUlCQ2dLQ0FRRUF6M0FSWXV3dmcxcFN6cDdQdC95eQpzc3pIeUlWbGx3azRVV1pCdDd4em9vQjhtMUJYMlRaeFRrRXc4MUx5QTVvbkEzbmlQclcvLy9XNWZtL3RZRitTCjRTV25GcTNXMmVuWis4ZDhZK0dHdUNTRndiQ0h6R2xhYU9USDBic0NtRkRCek9IcjlybUt3YTBFcFNnWHZTVGIKUUsvRzJuRloxN3hBYVZGZ2ZXNjREVDZrTjFMMldtMDBDUmZ2Vk9ZZThPc21YeXl2Ky8zdFdLZVJmTlE4MkJnZQpnWHVWMlhkYnV0dFVnandCVnBqTncwY0MrTEYvTnBOcmhlbkRQNEt1aVBoNTIrUWQ1R01VdVlXZVNiNmxUTVlZCjFTZWxmaWpsdi9KcnBFekJTMHVJZ1FmaDhPSklLaHgrbXRpekVHdEg2SXlOZWh2TUFrQnh0OFJram5yM1FZcFUKZndJREFRQUIKLS0tLS1FTkQgUFVCTElDIEtFWS0tLS0tCg==
+biller:
+  sourceId: 1
+  sourceUser: astra
+  sourcePass: astra
